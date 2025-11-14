@@ -29,10 +29,23 @@ export default {
     const { asPath } = useRouter()
     const currentUrl = `${SITE_URL}${asPath}`
 
+    // Generate page title and description based on path
+    let pageTitle = 'Dispatch Guide - Complete Walkthrough & Strategy Guide 2025'
+    let pageDescription = 'Master Dispatch with complete walkthroughs for all 8 episodes, character builds, hero strategies, and endings guide for the 2025 superhero adventure game.'
+
+    if (asPath.startsWith('/guides/')) {
+      pageTitle = 'Guides – Dispatch Guide'
+      pageDescription = 'Complete guides for Dispatch including gameplay mechanics, character builds, hero strategies, endings guide, and expert tips to master the 2025 superhero game.'
+    } else if (asPath.startsWith('/episodes/')) {
+      pageTitle = 'Episodes – Dispatch Guide'
+      pageDescription = 'Detailed walkthroughs for all 8 Dispatch episodes with mission strategies, character choices, success tips, and critical decisions for every chapter.'
+    }
+
     return (
     <>
+      <title>{pageTitle}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="Master Dispatch with complete walkthroughs for all 8 episodes, character builds, hero strategies, endings guide, and expert tips for the 2025 superhero adventure game." />
+      <meta name="description" content={pageDescription} />
 
       {/* Canonical URL */}
       <link rel="canonical" href={currentUrl} />
@@ -40,16 +53,16 @@ export default {
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={currentUrl} />
-      <meta property="og:title" content="Dispatch Guide - Complete Walkthrough & Strategy Guide 2025" />
-      <meta property="og:description" content="Master Dispatch with complete walkthroughs for all 8 episodes, character builds, hero strategies, endings guide, and expert tips for the 2025 superhero adventure game." />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
       <meta property="og:image" content={`${SITE_URL}/images/header.webp`} />
       <meta property="og:site_name" content="Dispatch Guide" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content={currentUrl} />
-      <meta name="twitter:title" content="Dispatch Guide - Complete Walkthrough & Strategy Guide 2025" />
-      <meta name="twitter:description" content="Master Dispatch with complete walkthroughs for all 8 episodes, character builds, hero strategies, endings guide, and expert tips for the 2025 superhero adventure game." />
+      <meta name="twitter:title" content={pageTitle} />
+      <meta name="twitter:description" content={pageDescription} />
       <meta name="twitter:image" content={`${SITE_URL}/images/header.webp`} />
 
       {/* Favicons */}
