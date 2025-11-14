@@ -1,0 +1,38 @@
+{
+  "name": "dispatchguide",
+  "version": "1.0.0",
+  "description": "Complete Dispatch Game Guide - Walkthroughs, Characters, Strategies & Endings",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "nextra": "^3.0.0",
+    "nextra-theme-docs": "^3.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^16.0.2",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "dispatch",
+    "dispatch guide",
+    "dispatch walkthrough",
+    "dispatch game",
+    "game guide",
+    "adhoc studio",
+    "dispatch episodes",
+    "dispatch endings",
+    "dispatch characters"
+  ],
+  "author": "DispatchGuide.org",
+  "license": "MIT"
+}

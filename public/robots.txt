@@ -1,0 +1,12 @@
+# https://dispatchguide.org/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://dispatchguide.org/sitemap.xml
+
+# Crawl-delay (optional, good practice)
+Crawl-delay: 1
+
+# Disallow nothing - we want everything indexed for SEO
