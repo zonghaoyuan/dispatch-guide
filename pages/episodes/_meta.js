@@ -11,12 +11,12 @@ export default {
     "title": "Episode 2: Onboard",
     "description": "Z-Team introduction"
   },
-  "escalation": {
-    "title": "Episode 3: Escalation ⚠️",
+  "turnover": {
+    "title": "Episode 3: Turnover ⚠️",
     "description": "PERMANENT Romance Choice"
   },
-  "priority": {
-    "title": "Episode 4: Priority",
+  "restructure": {
+    "title": "Episode 4: Restructure",
     "description": "Mission-heavy episode"
   },
   "team-building": {

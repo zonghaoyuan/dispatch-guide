@@ -42,3 +42,10 @@ HOMEPAGE_OPTIMIZATION.md
 IMPROVEMENTS.md
 GOOGLE_ADS_GUIDE.md
 FOOTER_SOLUTION.md
+IMAGE_OPTIMIZATION_SUMMARY.md
+GITIGNORE_UPDATE.md
+
+# Development Scripts (Temporary)
+download-images.js
+update-image-links.js
+image-mapping.json
